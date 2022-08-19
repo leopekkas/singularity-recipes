@@ -232,14 +232,6 @@ From: centos:7.7
   mkdir build
   cd build
 
-  # -DNetCDF_INCLUDE_DIR="/opt/netcdf/include" -DNETCDF_ROOT="/opt/netcdf"\
-  # -DNetCDFF_INCLUDE_DIR="/opt/netcdf/include"
-  # -DNetCDF_LIBRARY="/opt/netcdf/lib64/libnetcdf.so" \
-  # -DNetCDFF_LIBRARY="/opt/netcdf/lib64/libnetcdff.so" \
-
-  #-DWITH_XIOS:BOOL=TRUE \
-        #-DXIOS_INCLUDE_DIR=/opt/src/XIOS/include -DXIOS_ROOT=/opt/src/XIOS  \
-        #-DXIOS_LIBRARY="/opt/src/XIOS/lib/libxios.so" \
   cmake3 ../ -DCMAKE_INSTALL_PREFIX=/opt/elmer \
            -DWITH_MPI:BOOL=TRUE \
            -DWITH_LUA:BOOL=TRUE \
