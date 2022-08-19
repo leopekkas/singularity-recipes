@@ -272,13 +272,7 @@ From: centos:7.7
 
   make -j $(nproc) install
   cd /opt/src
-  #rm -fr elmerfem
-
-  export PATH=$OMPI_DIR/bin:$ELMER_HOME/bin:$PATH
-  export PATH=/opt/hdf5/bin:$PATH
-
-  cd /opt/src/elmerfem/elmerice/Tests/Xios/
-  #elmerf90 -I/opt/netcdf/include Check.F90 -o Check
+  rm -fr elmerfem
 
 %environment
   export SLURM_MPI_TYPE=pmix_v3
